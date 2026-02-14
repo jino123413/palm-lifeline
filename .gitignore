@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.granite/
+test-results/
+playwright-report/
+coverage/
+*.log
+npm-debug.log*
+raw/
+qa/artifacts/
+*.ait

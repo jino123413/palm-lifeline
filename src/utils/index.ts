@@ -1,0 +1,1 @@
+export { analyzePalmLifeline } from './palmRuleEngine';
