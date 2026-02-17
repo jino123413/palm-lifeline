@@ -1,4 +1,4 @@
-name: Deploy Azure Functions
+﻿name: Deploy Azure Functions
 
 on:
   push:
@@ -15,6 +15,7 @@ permissions:
 
 jobs:
   build-and-deploy:
+    if: ${{ secrets.AZURE_FUNCTIONAPP_NAME != '' && secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE != '' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
