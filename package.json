@@ -1,31 +1,32 @@
 {
-  "name": "palm-lifeline",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Palm lifeline capture and local analysis mini app",
-  "scripts": {
-    "dev": "granite dev",
-    "build": "granite build",
-    "qa:result": "playwright test qa/playwright-result.spec.js --workers=1 --reporter=line",
-    "gen:logo": "python generate_logo.py",
-    "capture:raw": "node scripts/capture_raw_screens.js",
-    "gen:submission": "node generate_submission_images.js"
-  },
-  "dependencies": {
-    "@apps-in-toss/web-framework": "1.5.2",
-    "@granite-js/native": "0.1.21",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "remixicon": "^4.6.0",
-    "tailwindcss": "^3.4.17"
-  },
-  "devDependencies": {
-    "@rsbuild/core": "^1.0.0",
-    "@rsbuild/plugin-react": "^1.0.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "typescript": "^5.7.2"
-  }
+    "name": "palm-lifeline",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Palm lifeline capture and local analysis mini app",
+    "dependencies": {
+        "@apps-in-toss/web-framework": "^1.13.0",
+        "@granite-js/native": "0.1.21",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "remixicon": "^4.6.0",
+        "tailwindcss": "^3.4.17"
+    },
+    "devDependencies": {
+        "@rsbuild/core": "^1.0.0",
+        "@rsbuild/plugin-react": "^1.0.0",
+        "@types/react": "^18.2.0",
+        "@types/react-dom": "^18.2.0",
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.47",
+        "typescript": "^5.7.2"
+    },
+    "scripts": {
+        "dev": "granite dev",
+        "build": "granite build",
+        "qa:result": "playwright test qa/playwright-result.spec.js --workers=1 --reporter=line",
+        "gen:logo": "python generate_logo.py",
+        "capture:raw": "node scripts/capture_raw_screens.js",
+        "gen:submission": "node generate_submission_images.js",
+        "deploy": "ait deploy"
+    }
 }
